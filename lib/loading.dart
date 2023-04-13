@@ -20,7 +20,7 @@ class _LoadingState extends State<Loading> {
 
     Future.delayed(const Duration(seconds: 1)).then((value) {
 
-      Navigator.push(context, MaterialPageRoute(builder: (context)=> const BMI()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> const BMI()));
     }
     );
   }
